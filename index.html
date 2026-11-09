@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ASTECME - Asesoría Técnica en Mecánica. Fabricación de maquinaria industrial, compactadoras, bandas transportadoras y soluciones de ingeniería a medida.">
+  <meta name="theme-color" content="#1B3A4B">
+  <title>ASTECME | Asesoría Técnica en Mecánica - Maquinaria Industrial</title>
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Design Tokens -->
+  <link rel="stylesheet" href="/assets/design-tokens.css">
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="/styles/main.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
+  <link rel="apple-touch-icon" href="/public/apple-touch-icon.svg">
+</head>
+<body>
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Header / Navigation -->
+  <header class="header" role="banner">
+    <div class="container header__container">
+      <!-- Logo -->
+      <a href="/" class="header__logo" aria-label="ASTECME - Inicio">
+        <svg class="header__logo-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <rect width="48" height="48" rx="8" fill="currentColor"/>
+          <path d="M24 14C18.4772 14 14 18.4772 14 24C14 29.5228 18.4772 34 24 34C29.5228 34 34 29.5228 34 24C34 18.4772 29.5228 14 24 14ZM24 30C20.6863 30 18 27.3137 18 24C18 20.6863 20.6863 18 24 18C27.3137 18 30 20.6863 30 24C30 27.3137 27.3137 30 24 30Z" fill="white"/>
+          <circle cx="24" cy="24" r="4" fill="currentColor"/>
+        </svg>
+        <span class="header__logo-text">ASTECME</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="header__nav" role="navigation" aria-label="Navegación principal">
+        <ul class="header__nav-list">
+          <li><a href="#productos" class="header__nav-link">Productos</a></li>
+          <li><a href="#servicios" class="header__nav-link">Servicios</a></li>
+          <li><a href="#proyectos" class="header__nav-link">Proyectos</a></li>
+          <li><a href="#nosotros" class="header__nav-link">Nosotros</a></li>
+          <li><a href="#contacto" class="header__nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA Buttons -->
+      <div class="header__actions">
+        <a href="#contacto" class="btn btn--ghost header__btn-ghost">Solicitar Asesoría</a>
+        <a href="#contacto" class="btn btn--primary header__btn-primary">Cotizar Proyecto</a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="header__menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+        <span class="header__menu-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="header__mobile-menu" role="navigation" aria-label="Menú móvil">
+      <nav class="header__mobile-nav">
+        <ul class="header__mobile-nav-list">
+          <li><a href="#productos" class="header__mobile-nav-link">Productos</a></li>
+          <li><a href="#servicios" class="header__mobile-nav-link">Servicios</a></li>
+          <li><a href="#proyectos" class="header__mobile-nav-link">Proyectos</a></li>
+          <li><a href="#nosotros" class="header__mobile-nav-link">Nosotros</a></li>
+          <li><a href="#contacto" class="header__mobile-nav-link">Contacto</a></li>
+        </ul>
+        <div class="header__mobile-actions">
+          <a href="#contacto" class="btn btn--ghost btn--full-width">Solicitar Asesoría</a>
+          <a href="#contacto" class="btn btn--primary btn--full-width">Cotizar Proyecto</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__background" aria-hidden="true">
+        <div class="hero__gradient"></div>
+        <div class="hero__pattern"></div>
+      </div>
+      <div class="container hero__container">
+        <div class="hero__content">
+          <span class="hero__badge">Ingeniería Mecánica de Precisión</span>
+          <h1 id="hero-title" class="hero__title">
+            Diseñamos y fabricamos la maquinaria que <span class="hero__highlight">mueve tu industria</span>
+          </h1>
+          <p class="hero__description">
+            Especialistas en compactadoras industriales, bandas transportadoras y soluciones de ingeniería a medida.
+            Más de 20 años entregando fiabilidad, seguridad y rendimiento en entornos exigentes.
+          </p>
+          <div class="hero__actions">
+            <a href="#productos" class="btn btn--primary btn--large">Ver Maquinaria</a>
+            <a href="#contacto" class="btn btn--secondary btn--large">Solicitar Estudio</a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="hero__stat-value">500+</span>
+              <span class="hero__stat-label">Proyectos entregados</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-value">20+</span>
+              <span class="hero__stat-label">Años de experiencia</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-value">15</span>
+              <span class="hero__stat-label">Países atendidos</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-value">ISO 9001</span>
+              <span class="hero__stat-label">Certificados</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__visual-card">
+            <div class="hero__visual-image">
+              <svg viewBox="0 0 400 300" fill="none" class="hero__illustration">
+                <!-- Industrial machinery illustration -->
+                <rect x="50" y="180" width="300" height="40" rx="4" fill="#1B3A4B" opacity="0.1"/>
+                <!-- Conveyor belt -->
+                <path d="M80 180 L320 180 L300 140 L100 140 Z" fill="#E8EBEF" stroke="#E2E8F0" stroke-width="2"/>
+                <path d="M100 140 L100 180 M140 140 L140 180 M180 140 L180 180 M220 140 L220 180 M260 140 L260 180 M300 140 L300 180" stroke="#64748B" stroke-width="1.5" stroke-dasharray="4 4"/>
+                <!-- Rollers -->
+                <circle cx="100" cy="160" r="12" fill="#1B3A4B"/>
+                <circle cx="100" cy="160" r="6" fill="#00A3E0"/>
+                <circle cx="300" cy="160" r="12" fill="#1B3A4B"/>
+                <circle cx="300" cy="160" r="6" fill="#00A3E0"/>
+                <!-- Compactor -->
+                <rect x="160" y="80" width="80" height="80" rx="8" fill="#1B3A4B" opacity="0.15"/>
+                <rect x="172" y="92" width="56" height="56" rx="4" fill="#E86C00" opacity="0.2"/>
+                <path d="M200 105 L200 135 M185 120 L215 120" stroke="#E86C00" stroke-width="3" stroke-linecap="round"/>
+                <!-- Technical labels -->
+                <text x="80" y="210" font-family="JetBrains Mono" font-size="10" fill="#4A5A6A" text-anchor="middle">BANDA TRANSPORTADORA</text>
+                <text x="200" y="55" font-family="JetBrains Mono" font-size="10" fill="#4A5A6A" text-anchor="middle">COMPACTADORA CNC-500</text>
+                <!-- Dimension lines -->
+                <path d="M80 190 L320 190" stroke="#00A3E0" stroke-width="1.5" marker-end="url(#arrow)"/>
+                <path d="M80 190 L80 185 M320 190 L320 185" stroke="#00A3E0" stroke-width="1.5"/>
+                <text x="200" y="185" font-family="JetBrains Mono" font-size="11" fill="#00A3E0" text-anchor="middle">2400mm</text>
+                <defs>
+                  <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                    <path d="M0 0 L6 3 L0 6 Z" fill="#00A3E0"/>
+                  </marker>
+                </defs>
+              </svg>
+            </div>
+            <div class="hero__visual-specs">
+              <div class="hero__spec">
+                <span class="hero__spec-label">Fuerza compactación</span>
+                <span class="hero__spec-value">500 kN</span>
+              </div>
+              <div class="hero__spec">
+                <span class="hero__spec-label">Ciclo completo</span>
+                <span class="hero__spec-value">45 seg</span>
+              </div>
+              <div class="hero__spec">
+                <span class="hero__spec-label">Capacidad banda</span>
+                <span class="hero__spec-value">120 t/h</span>
+              </div>
+              <div class="hero__spec">
+                <span class="hero__spec-label">Normativa</span>
+                <span class="hero__spec-value">ISO 9001 / CE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="products" aria-labelledby="products-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-header__tag">Nuestra Maquinaria</span>
+          <h2 id="products-title" class="section-header__title">Productos Principales</h2>
+          <p class="section-header__description">
+            Equipos diseñados para máxima durabilidad, eficiencia energética y cumplimiento normativo.
+            Cada máquina se adapta a las especificaciones técnicas de tu proceso productivo.
+          </p>
+        </header>
+
+        <div class="products__grid">
+          <!-- Product Card 1: Compactadoras -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <svg viewBox="0 0 320 200" fill="none" class="product-card__illustration">
+                <rect x="60" y="60" width="200" height="100" rx="8" fill="#1B3A4B" opacity="0.1"/>
+                <rect x="72" y="72" width="176" height="76" rx="4" fill="#E86C00" opacity="0.15"/>
+                <path d="M160 95 L160 125 M145 110 L175 110" stroke="#E86C00" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="160" cy="160" r="16" fill="#1B3A4B" opacity="0.2"/>
+                <circle cx="160" cy="160" r="8" fill="#E86C00" opacity="0.3"/>
+                <text x="160" y="185" font-family="JetBrains Mono" font-size="9" fill="#4A5A6A" text-anchor="middle">CÁMARA DE COMPACTACIÓN</text>
+              </svg>
+              <span class="product-card__badge">Destacado</span>
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Compactadoras Industriales</h3>
+              <p class="product-card__description">
+                Serie CNC: Fuerzas de 200 a 800 kN. Ciclos automatizados, control PLC,
+                sistemas de seguridad integrados. Para residuos, reciclaje, biomasa y chatarra.
+              </p>
+              <ul class="product-card__features">
+                <li><span class="product-card__feature-icon" aria-hidden="true">⚙</span> Control PLC Siemens/Allen-Bradley</li>
+                <li><span class="product-card__feature-icon" aria-hidden="true">🛡</span> Seguridad Categoría 3 / PL d</li>
+                <li><span class="product-card__feature-icon" aria-hidden="true">📊</span> Telemetría IoT opcional</li>
+              </ul>
+              <div class="product-card__specs">
+                <div class="product-card__spec">
+                  <span class="product-card__spec-label">Fuerza</span>
+                  <span class="product-card__spec-value">200–800 kN</span>
+                </div>
+                <div class="product-card__spec">
+                  <span class="product-card__spec-label">Ciclo</span>
+                  <span class="product-card__spec-value">35–60 seg</span>
+                </div>
+                <div class="product-card__spec">
+                  <span class="product-card__spec-label">Potencia</span>
+                  <span class="product-card__spec-value">15–55 kW</span>
+                </div>
+              </div>
+              <a href="#contacto" class="btn btn--primary product-card__cta">Ver Ficha Técnica</a>
+            </div>
+          </article>
+
+          <!-- Product Card 2: Bandas Transportadoras -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <svg viewBox="0 0 320 200" fill="none" class="product-card__illustration">
+                <path d="M40 120 L280 120 L260 80 L60 80 Z" fill="#E8EBEF" stroke="#E2E8F0" stroke-width="2"/>
+                <path d="M60 80 L60 120 M100 80 L100 120 M140 80 L140 120 M180 80 L180 120 M220 80 L220 120 M260 80 L260 120" stroke="#64748B" stroke-width="1" stroke-dasharray="4 4"/>
+                <circle cx="60" cy="100" r="14" fill="#1B3A4B"/>
+                <circle cx="60" cy="100" r="7" fill="#00A3E0"/>
+                <circle cx="260" cy="100" r="14" fill="#1B3A4B"/>
+                <circle cx="260" cy="100" r="7" fill="#00A3E0"/>
+                <text x="160" y="150" font-family="JetBrains Mono" font-size="9" fill="#4A5A6A" text-anchor="middle">BANDA MODULAR DE ACERO</text>
+              </svg>
+              <span class="product-card__badge">Nuevo</span>
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Bandas Transportadoras</h3>
+              <p class="product-card__description">
+                Bandas modulares, de rodillos, de cadena y telescópicas. Longitudes hasta 50m,
+                cargas hasta 5000 kg/m. Acero inoxidable, galvanizado o pintado según entorno.
+              </p>
+              <ul class="product-card__features">
+                <li><span class="product-card__feature-icon" aria-hidden="true">🔗</span> Módulos intercambiables</li>
+                <li><span class="product-card__feature-icon" aria-hidden="true">⚡</span> Variadores de frecuencia</li>
+                <li><span class="product-card__feature-icon" aria-hidden="true">🌡</span> Resistentes -30°C a +120°C</li>
+              </ul>
+              <div class="product-card__specs">
+                <div class="product-card__spec">
+                  <span class="product-card__spec-label">Longitud</span>
+                  <span class="product-card__spec-value">Hasta 50 m</span>
+                </div>
+                <div class="product-card__spec">
+                  <span class="product-card__spec-label">Carga lineal</span>
+                  <span class="product-card__spec-value">5000 kg/m</span>
+                </div>
+                <div class="product-card__spec">
+                  <span class="product-card__spec-label">Velocidad</span>
+                  <span class="product-card__spec-value">0.1–2.5 m/s</span>
+                </div>
+              </div>
+              <a href="#contacto" class="btn btn--primary product-card__cta">Configurar Banda</a>
+            </div>
+          </article>
+
+          <!-- Product Card 3: Ingeniería a Medida -->
+          <article class="product-card">
+            <div class="product-card__image">
+              <svg viewBox="0 0 320 200" fill="none" class="product-card__illustration">
+                <rect x="80" y="40" width="160" height="120" rx="8" fill="#1B3A4B" opacity="0.1"/>
+                <path d="M160 60 L160 140 M100 100 L220 100" stroke="#00A3E0" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="160" cy="100" r="24" fill="none" stroke="#00A3E0" stroke-width="2" stroke-dasharray="8 4"/>
+                <circle cx="160" cy="100" r="8" fill="#00A3E0"/>
+                <rect x="140" y="40" width="40" height="8" rx="2" fill="#E86C00"/>
+                <text x="160" y="185" font-family="JetBrains Mono" font-size="9" fill="#4A5A6A" text-anchor="middle">DISEÑO PARAMÉTRICO CAD/CAM</text>
+              </svg>
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Ingeniería y Fabricación a Medida</h3>
+              <p class="product-card__description">
+                Desarrollo completo: concepto, cálculo estructural (FEA), simulación dinámica,
+                planos de fabricación, mecanizado CNC 5 ejes, montaje y puesta en marcha.
+              </p>
+              <ul class="product-card__features">
+                <li><span class="product-card__feature-icon" aria-hidden="true">🖥</span> Simulación FEA/CFD</li>
+                <li><span class="product-card__feature-icon" aria-hidden="true">📐</span> Tolerancias ±0.02 mm</li>
+                <li><span class="product-card__feature-icon" aria-hidden="true">📋</span> Documentación CE completa</li>
+              </ul>
+              <div class="product-card__specs">
+                <div class="product-card__spec">
+                  <span class="product-card__spec-label">Software</span>
+                  <span class="product-card__spec-value">SolidWorks / ANSYS</span>
+                </div>
+                <div class="product-card__spec">
+                  <span class="product-card__spec-label">Mecanizado</span>
+                  <span class="product-card__spec-value">CNC 5 ejes</span>
+                </div>
+                <div class="product-card__spec">
+                  <span class="product-card__spec-label">Materiales</span>
+                  <span class="product-card__spec-value">Acero, Inox, Al, Ti</span>
+                </div>
+              </div>
+              <a href="#contacto" class="btn btn--secondary product-card__cta">Solicitar Estudio</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services" aria-labelledby="services-title">
+      <header class="section-header">
+          <span class="section-header__tag">Servicios Técnicos</span>
+          <h2 id="services-title" class="section-header__title">Servicios de Ingeniería</h2>
+          <p class="section-header__description">
+            Acompañamos todo el ciclo de vida de tu maquinaria: desde el diseño hasta el mantenimiento predictivo.
+          </p>
+        </header>
+
+        <div class="services__inner">
+          <div class="services__grid">
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="10" fill="#1B3A4B" opacity="0.1"/>
+                <path d="M14 24 L20 30 L34 18" stroke="#1B3A4B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="34" cy="18" r="4" fill="#E86C00"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Diseño y Cálculo Estructural</h3>
+            <p class="service-card__description">
+              Análisis por elementos finitos (FEA), cálculo de fatiga, simulación térmica y dinámica.
+              Validación según Eurocódigo, ASME, API y normativas sectoriales.
+            </p>
+            <ul class="service-card__features">
+              <li>Análisis estático y dinámico</li>
+              <li>Optimización topológica</li>
+              <li>Certificación CE y marcado</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="10" fill="#1B3A4B" opacity="0.1"/>
+                <circle cx="24" cy="24" r="14" fill="none" stroke="#1B3A4B" stroke-width="2"/>
+                <path d="M24 14 L24 24 L32 30" stroke="#1B3A4B" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="24" cy="24" r="3" fill="#E86C00"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Mantenimiento Predictivo</h3>
+            <p class="service-card__description">
+              Monitorización de vibraciones, termografía, análisis de aceite y telemetría IoT.
+              Reducimos paradas no planificadas hasta un 40% con planes basados en condición real.
+            </p>
+            <ul class="service-card__features">
+              <li>Análisis de vibraciones (ISO 10816)</li>
+              <li>Termografía infrarroja</li>
+              <li>Plataforma IoT propia</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="10" fill="#1B3A4B" opacity="0.1"/>
+                <path d="M14 34 L24 14 L34 34" stroke="#1B3A4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 26 L30 26" stroke="#1B3A4B" stroke-width="2.5" stroke-linecap="round"/>
+                <rect x="19" y="34" width="10" height "10" rx="2" fill="#E86C00"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Retrofit y Modernización</h3>
+            <p class="service-card__description">
+              Actualización de maquinaria existente: automatización, seguridad, eficiencia energética.
+              Extendemos vida útil 15+ años con ROI medio de 18 meses.
+            </p>
+            <ul class="service-card__features">
+              <li>Automatización Industry 4.0</li>
+              <li>Actualización normativa seguridad</li>
+              <li>Eficiencia energética (IE3/IE4)</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="10" fill="#1B3A4B" opacity="0.1"/>
+                <rect x="12" y="16" width="24" height="20" rx="3" fill="none" stroke="#1B3A4B" stroke-width="2"/>
+                <path d="M16 22 L20 22 M16 28 L20 28 M28 22 L32 22 M28 28 L32 28" stroke="#1B3A4B" stroke-width="1.5"/>
+                <circle cx="36" cy="26" r="6" fill="#E86C00"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Fabricación y Montaje</h3>
+            <p class="service-card__description">
+              Talleres propios 3000m²: corte laser, plegado, mecanizado CNC, soldadura certificada,
+              pintura epoxi/polvo. Montaje in-situ con equipo propio y dirección de obra.
+            </p>
+            <ul class="service-card__features">
+              <li>Corte laser fibra 12kW (3000×1500)</li>
+              <li>Mecanizado 5 ejes (Ø800×1200)</li>
+              <li>Soldadores homologados EN 287</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="10" fill="#1B3A4B" opacity="0.1"/>
+                <path d="M14 30 L34 18" stroke="#1B3A4B" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M14 18 L34 30" stroke="#1B3A4B" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="24" cy="24" r="8" fill="none" stroke="#E86C00" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Asesoría Normativa y CE</h3>
+            <p class="service-card__description">
+              Evaluación de riesgos, archivo técnico, declaraciones CE, manuales de instrucciones.
+              Cumplimiento Directiva Máquinas 2006/42/CE, ATEX, PED, Baja Tensión.
+            </p>
+            <ul class="service-card__features">
+              <li>Evaluación riesgos (ISO 12100)</li>
+              <li>Archivo técnico completo</li>
+              <li>Manuales en 12 idiomas</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="10" fill="#1B3A4B" opacity="0.1"/>
+                <path d="M16 32 L16 16 C16 12 20 12 24 12 C28 12 32 12 32 16 L32 32" stroke="#1B3A4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M24 12 L24 32" stroke="#1B3A4B" stroke-width="2" stroke-dasharray="4 4"/>
+                <circle cx="24" cy="24" r="4" fill="#E86C00"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Formación y Puesta en Marcha</h3>
+            <p class="service-card__description">
+              Formación operadores/mantenimiento, protocolos de arranque, documentación as-built,
+              soporte remoto 24/7 primer año. Certificación de competencias.
+            </p>
+            <ul class="service-card__features">
+              <li>Formación in-situ / remota</li>
+              <li>Soporte 24/7 primer año</li>
+              <li>Certificación operadores</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+    <!-- Projects / Case Studies Section -->
+    <section id="proyectos" class="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-header__tag">Casos de Éxito</span>
+          <h2 id="projects-title" class="section-header__title">Proyectos Destacados</h2>
+          <p class="section-header__description">
+            Resultados medibles en sectores exigentes: reciclaje, automoción, alimentación, energía y minería.
+          </p>
+        </header>
+
+        <div class="projects__grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <svg viewBox="0 0 400 250" fill="none" class="project-card__illustration">
+                <rect width="400" height="250" fill="#1B3A4B" opacity="0.05"/>
+                <text x="200" y="125" font-family="Inter" font-size="14" fill="#4A5A6A" text-anchor="middle" font-weight="500">Planta Reciclaje RCD</text>
+                <text x="200" y="145" font-family="JetBrains Mono" font-size="11" fill="#64748B" text-anchor="middle">4× Compactadoras CNC-500 + 120m bandas</text>
+              </svg>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__meta">
+                <span class="project-card__sector">Reciclaje / RCD</span>
+                <span class="project-card__location">Madrid, España</span>
+              </div>
+              <h3 class="project-card__title">Planta de Valorización de RCD</h3>
+              <p class="project-card__description">
+                Línea completa de clasificación y compactación de residuos de construcción y demolición.
+                200 t/h capacidad, operación 24/7 automatizada.
+              </p>
+              <div class="project-card__results">
+                <div class="project-card__result">
+                  <span class="project-card__result-value">40%</span>
+                  <span class="project-card__result-label">Menos paradas</span>
+                </div>
+                <div class="project-card__result">
+                  <span class="project-card__result-value">28%</span>
+                  <span class="project-card__result-label">Ahorro energético</span>
+                </div>
+                <div class="project-card__result">
+                  <span class="project-card__result-value">18</span>
+                  <span class="project-card__result-label">Meses ROI</span>
+                </div>
+              </div>
+              <a href="#" class="project-card__link">Ver caso completo →</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <svg viewBox="0 0 400 250" fill="none" class="project-card__illustration">
+                <rect width="400" height="250" fill="#E86C00" opacity="0.05"/>
+                <text x="200" y="125" font-family="Inter" font-size="14" fill="#4A5A6A" text-anchor="middle" font-weight="500">Línea Montaje Automotriz</text>
+                <text x="200" y="145" font-family="JetBrains Mono" font-size="11" fill="#64748B" text-anchor="middle">Bandas telescópicas + Retrofit seguridad</text>
+              </svg>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__meta">
+                <span class="project-card__sector">Automoción</span>
+                <span class="project-card__location">Barcelona, España</span>
+              </div>
+              <h3 class="project-card__title">Modernización Línea Montaje</h3>
+              <p class="project-card__description">
+                Retrofit de 800m de bandas transportadoras con variadores IE4, seguridad PL d y trazabilidad RFID.
+                Integración con MES cliente.
+              </p>
+              <div class="project-card__results">
+                <div class="project-card__result">
+                  <span class="project-card__result-value">35%</span>
+                  <span class="project-card__result-label">Menos consumo</span>
+                </div>
+                <div class="project-card__result">
+                  <span class="project-card__result-value">0</span>
+                  <span class="project-card__result-label">Incidentes seguridad</span>
+                </div>
+                <div class="project-card__result">
+                  <span class="project-card__result-value">100%</span>
+                  <span class="project-card__result-label">Trazabilidad</span>
+                </div>
+              </div>
+              <a href="#" class="project-card__link">Ver caso completo →</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <svg viewBox="0 0 400 250" fill="none" class="project-card__illustration">
+                <rect width="400" height="250" fill="#00A3E0" opacity="0.05"/>
+                <text x="200" y="125" font-family="Inter" font-size="14" fill="#4A5A6A" text-anchor="middle" font-weight="500">Industria Alimentaria</text>
+                <text x="200" y="145" font-family="JetBrains Mono" font-size="11" fill="#64748B" text-anchor="middle">Bandas inox + Compactadora higiénica</text>
+              </svg>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__meta">
+                <span class="project-card__sector">Alimentación</span>
+                <span class="project-card__location">Valencia, España</span>
+              </div>
+              <h3 class="project-card__title">Línea Procesado Vegetales</h3>
+              <p class="project-card__description">
+                Bandas modulares inox 316L, compactadora diseño higiénico (EHEDG), CIP integrado.
+                Cumplimiento IFS/BRC, cambio formato <5 min.
+              </p>
+              <div class="project-card__results">
+                <div class="project-card__result">
+                  <span class="project-card__result-value">99.8%</span>
+                  <span class="project-card__result-label">Disponibilidad</span>
+                </div>
+                <div class="project-card__result">
+                  <span class="project-card__result-value">-60%</span>
+                  <span class="project-card__result-label">Tiempo limpieza</span>
+                </div>
+                <div class="project-card__result">
+                  <span class="project-card__result-value">IFS</span>
+                  <span class="project-card__result-label">Certificado</span>
+                </div>
+              </div>
+              <a href="#" class="project-card__link">Ver caso completo →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about" aria-labelledby="about-title">
+      <div class="about__inner">
+        <div class="about__grid">
+          <div class="about__content">
+            <header class="section-header section-header--left">
+              <span class="section-header__tag">Sobre ASTECME</span>
+              <h2 id="about-title" class="section-header__title">Ingeniería que perdura</h2>
+              <p class="section-header__description">
+                Desde 2004, combinamos conocimiento técnico profundo con capacidad de fabricación propia
+                para entregar maquinaria que resiste los entornos más exigentes.
+              </p>
+            </header>
+
+            <div class="about__features">
+              <div class="about__feature">
+                <div class="about__feature-icon" aria-hidden="true">
+                  <svg viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#1B3A4B" opacity="0.1"/>
+                    <path d="M12 20 L18 26 L28 14" stroke="#1B3A4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="about__feature-text">
+                  <h3 class="about__feature-title">Fabricación Propia</h3>
+                  <p class="about__feature-description">Talleres 3000m² con CNC 5 ejes, corte laser 12kW, soldadura certificada. Control total de calidad y plazos.</p>
+                </div>
+              </div>
+
+              <div class="about__feature">
+                <div class="about__feature-icon" aria-hidden="true">
+                  <svg viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#1B3A4B" opacity="0.1"/>
+                    <circle cx="20" cy="20" r="12" fill="none" stroke="#1B3A4B" stroke-width="2"/>
+                    <path d="M20 12 L20 20 L26 26" stroke="#1B3A4B" stroke-width="2.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="about__feature-text">
+                  <h3 class="about__feature-title">Ingeniería Integrada</h3>
+                  <p class="about__feature-description">Diseño, simulación FEA/CFD, planos, fabrication, montaje y puesta en marcha. Un único responsable.</p>
+                </div>
+              </div>
+
+              <div class="about__feature">
+                <div class="about__feature-icon" aria-hidden="true">
+                  <svg viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#1B3A4B" opacity="0.1"/>
+                    <path d="M14 26 L14 14 C14 10 18 10 22 10 C26 10 30 10 30 14 L30 26" stroke="#1B3A4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 10 L22 26" stroke="#1B3A4B" stroke-width="2" stroke-dasharray="4 4"/>
+                    <circle cx="22" cy="20" r="4" fill="#E86C00"/>
+                  </svg>
+                </div>
+                <div class="about__feature-text">
+                  <h3 class="about__feature-title">Certificación Total</h3>
+                  <p class="about__feature-description">ISO 9001, ISO 14001, ISO 45001, soldadores EN 287, procedimientos WPS/PQR, marcado CE garantizado.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__stats">
+              <div class="about__stat">
+                <span class="about__stat-value">3000</span>
+                <span class="about__stat-label">m² talleres</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-value">45</span>
+                <span class="about__stat-label">Ingenieros y técnicos</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-value">3</span>
+                <span class="about__stat-label">Certificaciones ISO</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-value">24/7</span>
+                <span class="about__stat-label">Soporte remoto</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__visual">
+            <div class="about__visual-card">
+              <svg viewBox="0 0 500 400" fill="none" class="about__illustration">
+                <!-- Workshop floor -->
+                <rect x="40" y="280" width="420" height="80" rx="4" fill="#1B3A4B" opacity="0.05"/>
+                <!-- CNC Machine -->
+                <rect x="80" y="180" width="140" height="100" rx="6" fill="#1B3A4B" opacity="0.1"/>
+                <rect x="92" y="192" width="116" height="76" rx="3" fill="#E86C00" opacity="0.15"/>
+                <circle cx="150" cy="230" r="16" fill="#1B3A4B" opacity="0.2"/>
+                <circle cx="150" cy="230" r="8" fill="#E86C00" opacity="0.3"/>
+                <text x="150" y="295" font-family="JetBrains Mono" font-size="9" fill="#4A5A6A" text-anchor="middle">CNC 5 EJES</text>
+                <!-- Laser Cutter -->
+                <rect x="280" y="190" width="160" height="90" rx="6" fill="#00A3E0" opacity="0.1"/>
+                <rect x="292" y="202" width="136" height="66" rx="3" fill="#00A3E0" opacity="0.15"/>
+                <line x1="292" y1="235" x2="428" y2="235" stroke="#00A3E0" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+                <text x="360" y="295" font-family="JetBrains Mono" font-size="9" fill="#4A5A6A" text-anchor="middle">CORTE LASER FIBRA 12kW</text>
+                <!-- Overhead crane -->
+                <path d="M40 120 L460 120" stroke="#4A5A6A" stroke-width="4"/>
+                <path d="M150 80 L150 120 M360 80 L360 120" stroke="#4A5A6A" stroke-width="3"/>
+                <rect x="140" y="60" width="20" height="20" rx="3" fill="#E86C00"/>
+                <rect x="350" y="60" width="20" height="20" rx="3" fill="#E86C00"/>
+                <text x="250" y="50" font-family="JetBrains Mono" font-size="10" fill="#4A5A6A" text-anchor="middle">PUENTE GRÚA 10T</text>
+                <!-- Welding stations -->
+                <circle cx="100" cy="320" r="30" fill="#E86C00" opacity="0.1"/>
+                <circle cx="100" cy="320" r="15" fill="#E86C00" opacity="0.2"/>
+                <text x="100" y="375" font-family="JetBrains Mono" font-size="9" fill="#4A5A6A" text-anchor="middle">SOLDADURA CERTIFICADA</text>
+                <!-- Measuring -->
+                <circle cx="400" cy="320" r="30" fill="#00A3E0" opacity="0.1"/>
+                <circle cx="400" cy="320" r="15" fill="#00A3E0" opacity="0.2"/>
+                <path d="M385 320 L415 320 M400 305 L400 335" stroke="#00A3E0" stroke-width="2.5" stroke-linecap="round"/>
+                <text x="400" y="375" font-family="JetBrains Mono" font-size="9" fill="#4A5A6A" text-anchor="middle">CONTROL DIMENSIONAL</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta__content">
+          <h2 id="cta-title" class="cta__title">¿Tienes un proyecto en mente?</h2>
+          <p class="cta__description">
+            Nuestro equipo de ingenieros analiza tus requisitos y te presenta una propuesta técnica
+            y económica en 48 horas. Sin compromiso.
+          </p>
+          <div class="cta__actions">
+            <a href="#contacto" class="btn btn--primary btn--large cta__btn-primary">Solicitar Estudio de Viabilidad</a>
+            <a href="tel:+34900123456" class="btn btn--secondary btn--large cta__btn-secondary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              Llamar: +34 900 123 456
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-header__tag">Contacto</span>
+          <h2 id="contact-title" class="section-header__title">Hablemos de tu proyecto</h2>
+          <p class="section-header__description">
+            Completa el formulario y un ingeniero especialista se pondrá en contacto en menos de 24 horas.
+          </p>
+        </header>
+
+        <div class="contact__grid">
+          <form class="contact__form" action="/api/contact" method="POST" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="nombre" class="form__label">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" class="form__input" required autocomplete="name" placeholder="Juan Pérez">
+              </div>
+              <div class="form__group">
+                <label for="empresa" class="form__label">Empresa</label>
+                <input type="text" id="empresa" name="empresa" class="form__input" autocomplete="organization" placeholder="Industrias Ejemplo S.L.">
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="email" class="form__label">Email *</label>
+                <input type="email" id="email" name="email" class="form__input" required autocomplete="email" placeholder="juan@empresa.com">
+              </div>
+              <div class="form__group">
+                <label for="telefono" class="form__label">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" class="form__input" autocomplete="tel" placeholder="+34 600 000 000">
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="sector" class="form__label">Sector *</label>
+              <select id="sector" name="sector" class="form__select" required>
+                <option value="">Selecciona tu sector</option>
+                <option value="reciclaje">Reciclaje / Gestión residuos</option>
+                <option value="automocion">Automoción</option>
+                <option value="alimentacion">Alimentación / Bebidas</option>
+                <option value="energia">Energía / Renovables</option>
+                <option value="mineria">Minería / Canteras</option>
+                <option value="logistica">Logística / Almacenamiento</option>
+                <option value="farmaceutica">Farmacéutica / Química</option>
+                <option value="construccion">Construcción / Áridos</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="tipo-proyecto" class="form__label">Tipo de proyecto *</label>
+              <div class="form__checkbox-group">
+                <label class="form__checkbox">
+                  <input type="checkbox" name="tipo-proyecto" value="compactadora"> Compactadora industrial
+                </label>
+                <label class="form__checkbox">
+                  <input type="checkbox" name="tipo-proyecto" value="banda"> Banda transportadora
+                </label>
+                <label class="form__checkbox">
+                  <input type="checkbox" name="tipo-proyecto" value="ingenieria"> Ingeniería a medida
+                </label>
+                <label class="form__checkbox">
+                  <input type="checkbox" name="tipo-proyecto" value="retrofit"> Retrofit / Modernización
+                </label>
+                <label class="form__checkbox">
+                  <input type="checkbox" name="tipo-proyecto" value="mantenimiento"> Mantenimiento predictivo
+                </label>
+                <label class="form__checkbox">
+                  <input type="checkbox" name="tipo-proyecto" value="normativa"> Asesoría normativa / CE
+                </label>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="mensaje" class="form__label">Descripción del proyecto *</label>
+              <textarea id="mensaje" name="mensaje" class="form__textarea" rows="5" required placeholder="Describe tus necesidades: capacidades, materiales, entorno, normativas aplicables, plazos..."></textarea>
+            </div>
+
+            <div class="form__group form__group--consent">
+              <label class="form__checkbox">
+                <input type="checkbox" name="privacidad" required>
+                He leído y acepto la <a href="/politica-privacidad">Política de Privacidad</a> y autorizo el tratamiento de mis datos para gestionar esta consulta.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--large form__submit">
+              <span class="form__submit-text">Enviar Solicitud</span>
+              <span class="form__submit-loading" aria-hidden="true">
+                <svg class="spinner" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-opacity="0.25"/>
+                  <path d="M12 2a10 10 0 0 1 10 10" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                    <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/>
+                  </path>
+                </svg>
+              </span>
+            </button>
+          </form>
+
+          <div class="contact__info">
+            <div class="contact__card">
+              <div class="contact__card-icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none">
+                  <rect width="40" height="40" rx="8" fill="#1B3A4B" opacity="0.1"/>
+                  <path d="M12 20 L18 26 L28 14" stroke="#1B3A4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="contact__card-title">Oficina Técnica</h3>
+              <address class="contact__card-text">
+                Pol. Industrial Norte, C/ Ingenieros 12<br>
+                28703 San Sebastián de los Reyes<br>
+                Madrid, España
+              </address>
+            </div>
+
+            <div class="contact__card">
+              <div class="contact__card-icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none">
+                  <rect width="40" height="40" rx="8" fill="#1B3A4B" opacity="0.1"/>
+                  <circle cx="20" cy="20" r="12" fill="none" stroke="#1B3A4B" stroke-width="2"/>
+                  <path d="M20 12 L20 20 L26 26" stroke="#1B3A4B" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="contact__card-title">Horario</h3>
+              <div class="contact__card-text">
+                <p>Lunes – Jueves: 8:00 – 18:00</p>
+                <p>Viernes: 8:00 – 15:00</p>
+                <p>Guardias 24/7 para clientes con contrato de mantenimiento</p>
+              </div>
+            </div>
+
+            <div class="contact__card">
+              <div class="contact__card-icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none">
+                  <rect width="40" height="40" rx="8" fill="#1B3A4B" opacity="0.1"/>
+                  <path d="M20 10 L20 30 M10 20 L30 20" stroke="#1B3A4B" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="contact__card-title">Contacto Directo</h3>
+              <div class="contact__card-text">
+                <p><a href="tel:+34900123456" class="contact__link">+34 900 123 456</a> (Centralita)</p>
+                <p><a href="mailto:tecnico@astecme.com" class="contact__link">tecnico@astecme.com</a> (Dpto. Ingeniería)</p>
+                <p><a href="mailto:comercial@astecme.com" class="contact__link">comercial@astecme.com</a> (Ventas)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="/" class="footer__logo" aria-label="ASTECME - Inicio">
+            <svg class="footer__logo-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <rect width="48" height="48" rx="8" fill="currentColor"/>
+              <path d="M24 14C18.4772 14 14 18.4772 14 24C14 29.5228 18.4772 34 24 34C29.5228 34 34 29.5228 34 24C34 18.4772 29.5228 14 24 14ZM24 30C20.6863 30 18 27.3137 18 24C18 20.6863 20.6863 18 24 18C27.3137 18 30 20.6863 30 24C30 27.3137 27.3137 30 24 30Z" fill="white"/>
+              <circle cx="24" cy="24" r="4" fill="currentColor"/>
+            </svg>
+            <span class="footer__logo-text">ASTECME</span>
+          </a>
+          <p class="footer__tagline">Asesoría Técnica en Mecánica</p>
+          <p class="footer__description">
+            Diseñamos y fabricamos maquinaria industrial de precisión.
+            Compactadoras, bandas transportadoras e ingeniería a medida desde 2004.
+          </p>
+          <div class="footer__certs">
+            <img src="/public/cert-iso9001.svg" alt="ISO 9001 Certificado" class="footer__cert" width="80" height="30">
+            <img src="/public/cert-iso14001.svg" alt="ISO 14001 Certificado" class="footer__cert" width="80" height="30">
+            <img src="/public/cert-iso45001.svg" alt="ISO 45001 Certificado" class="footer__cert" width="80" height="30">
+            <img src="/public/cert-ce.svg" alt="Marcado CE" class="footer__cert" width="60" height="30">
+          </div>
+        </div>
+
+        <nav class="footer__nav" aria-label="Navegación pie de página">
+          <div class="footer__nav-col">
+            <h4 class="footer__nav-title">Productos</h4>
+            <ul class="footer__nav-list">
+              <li><a href="#productos" class="footer__nav-link">Compactadoras Industriales</a></li>
+              <li><a href="#productos" class="footer__nav-link">Bandas Transportadoras</a></li>
+              <li><a href="#productos" class="footer__nav-link">Ingeniería a Medida</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h4 class="footer__nav-title">Servicios</h4>
+            <ul class="footer__nav-list">
+              <li><a href="#servicios" class="footer__nav-link">Diseño y Cálculo Estructural</a></li>
+              <li><a href="#servicios" class="footer__nav-link">Mantenimiento Predictivo</a></li>
+              <li><a href="#servicios" class="footer__nav-link">Retrofit y Modernización</a></li>
+              <li><a href="#servicios" class="footer__nav-link">Asesoría Normativa CE</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h4 class="footer__nav-title">Empresa</h4>
+            <ul class="footer__nav-list">
+              <li><a href="#nosotros" class="footer__nav-link">Sobre Nosotros</a></li>
+              <li><a href="#proyectos" class="footer__nav-link">Casos de Éxito</a></li>
+              <li><a href="#" class="footer__nav-link">Certificaciones</a></li>
+              <li><a href="#" class="footer__nav-link">Trabaja con Nosotros</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h4 class="footer__nav-title">Legal</h4>
+            <ul class="footer__nav-list">
+              <li><a href="#" class="footer__nav-link">Aviso Legal</a></li>
+              <li><a href="#" class="footer__nav-link">Política de Privacidad</a></li>
+              <li><a href="#" class="footer__nav-link">Política de Cookies</a></li>
+              <li><a href="#" class="footer__nav-link">Condiciones Generales</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 ASTECME. Todos los derechos reservados.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L16.583 12 9.545 15.568z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Twitter/X">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 9.75h-3.554l-5.555-6.593-6.015 6.593H2.25l7.377-8.631L.459 2.25h3.437l4.847 5.496 5.291-5.496h3.542z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="/scripts/main.js" type="module"></script>
+</body>
+</html>

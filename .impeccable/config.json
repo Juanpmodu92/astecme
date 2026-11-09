@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [
+      "kicker-above-heading"
+    ],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "astecme/index.html",
+          "index.html"
+        ],
+        "createdAt": "2026-11-09T21:33:24.901Z",
+        "reason": "SVG placeholder/illustration text not user-facing"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-11-09T21:34:52.090Z",
+        "reason": "Inter chosen for excellent readability, accessibility, and multilingual support in technical B2B context"
+      }
+    ]
+  }
+}
