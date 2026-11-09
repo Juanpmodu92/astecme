@@ -34,3 +34,5 @@ coverage/
 # Impeccable (keep config, ignore sessions)
 .impeccable/hook-sessions/
 .impeccable/hook-claims/
+
+.vercel
