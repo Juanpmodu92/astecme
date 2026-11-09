@@ -1,3 +1,6 @@
 {
-  "deploymentProtection": false
+  "deploymentProtection": false,
+  "buildCommand": "echo 'Static site - no build needed'",
+  "outputDirectory": ".",
+  "devCommand": "npx serve . -l 3000"
 }
