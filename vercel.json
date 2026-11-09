@@ -1,6 +1,12 @@
 {
-  "deploymentProtection": false,
-  "buildCommand": "echo 'Static site - no build needed'",
-  "outputDirectory": ".",
-  "devCommand": "npx serve . -l 3000"
+  "version": 2,
+  "public": true,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
 }
