@@ -93,7 +93,7 @@
   --text-caption-weight: 400;
   --text-caption-letter-spacing: 0.01em;
 
-  --text-button-size: 14px;
+  --text-button-size: 15px;
   --text-button-line-height: 1;
   --text-button-weight: 600;
   --text-button-letter-spacing: 0.02em;
@@ -147,11 +147,15 @@
 
   /* ===== COMPONENT TOKENS ===== */
   /* Buttons */
-  --btn-padding-desktop: 12px 24px;
-  --btn-padding-mobile: 10px 20px;
+  --btn-padding-desktop: 14px 28px;
+  --btn-padding-mobile: 14px 24px;
+  --btn-padding-large: 16px 32px;
+  --btn-min-height: 48px;
+  --btn-min-height-large: 56px;
   --btn-border-radius: var(--radius-base);
   --btn-font-weight: var(--font-weight-semibold);
   --btn-font-size: var(--text-button-size);
+  --btn-font-size-large: 16px;
 
   --btn-primary-bg: var(--color-primary);
   --btn-primary-color: #FFFFFF;
@@ -225,10 +229,9 @@
   --table-hover-row: var(--color-slate-light);
 }
 
-/* Dark mode support (optional - for future) */
+/* Dark mode support */
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Override for dark mode if needed */
     --color-background: #0F172A;
     --color-surface: #1E293B;
     --color-text-primary: #F1F5F9;
@@ -236,6 +239,18 @@
     --color-text-muted: #94A3B8;
     --color-border: #334155;
     --color-border-focus: #00A3E0;
+    --color-slate-light: #334155;
+    --table-row-bg-odd: #1E293B;
+    --table-hover-row: #334155;
+    --btn-primary-bg: var(--color-technical-blue);
+    --btn-primary-hover: #0088bd;
+    --btn-secondary-bg: transparent;
+    --btn-secondary-color: #F1F5F9;
+    --btn-secondary-border: 2px solid #94A3B8;
+    --btn-secondary-hover: rgba(255, 255, 255, 0.08);
+    --btn-secondary-hover-color: #FFFFFF;
+    --btn-ghost-color: #E2E8F0;
+    --btn-ghost-hover: rgba(255, 255, 255, 0.08);
   }
 }
 

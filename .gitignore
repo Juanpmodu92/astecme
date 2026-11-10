@@ -36,3 +36,10 @@ coverage/
 .impeccable/hook-claims/
 
 .vercel
+
+# Source media (keep optimized assets in /assets)
+*.zip
+/logo.jpg
+/Gemini_*.jpg
+/_tmp_fotos/
+
